@@ -126,8 +126,8 @@ function onStartGame() {
 
 function changeDirection(e) {
   var keys = e.which;
-  if (keys == '40' && snakeDirection != 'up') snakeDirection = 'down';
-  else if (keys == '65' && snakeDirection != 'left') snakeDirection = 'left';
+  //if (keys == '40' && snakeDirection != 'up') snakeDirection = 'down';
+  if (keys == '65' && snakeDirection != 'left') snakeDirection = 'left';
   else if (keys == '83' && snakeDirection != 'down') snakeDirection = 'down';
   else if (keys == '87' && snakeDirection != 'up') snakeDirection = 'up';
   else if (keys == '68' && snakeDirection != 'right') snakeDirection = 'right';
