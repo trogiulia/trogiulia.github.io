@@ -20,7 +20,7 @@ function initElement() {
   gameArea = document.querySelector('#gameArea');
 
   gameAreaContext = gameArea.getContext('2d');
-  gameAreaWidth = 400;
+  gameAreaWidth = 800;
   gameAreaHeight = 600;
   cellWidth = 20;
   gameArea.width = gameAreaWidth;
@@ -127,9 +127,10 @@ function onStartGame() {
 function changeDirection(e) {
   var keys = e.which;
   if (keys == '40' && snakeDirection != 'up') snakeDirection = 'down';
-  else if (keys == '39' && snakeDirection != 'left') snakeDirection = 'right';
-  else if (keys == '38' && snakeDirection != 'down') snakeDirection = 'up';
-  else if (keys == '37' && snakeDirection != 'right') snakeDirection = 'left';
+  else if (keys == '65' && snakeDirection != 'left') snakeDirection = 'left';
+  else if (keys == '83' && snakeDirection != 'down') snakeDirection = 'down';
+  else if (keys == '87' && snakeDirection != 'up') snakeDirection = 'up';
+  else if (keys == '68' && snakeDirection != 'right') snakeDirection = 'right';
 }
 
 function initEvent() {
